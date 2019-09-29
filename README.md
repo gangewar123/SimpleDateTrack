@@ -11,14 +11,14 @@ These instructions will get you a copy of the project up and running on your loc
 ## Installing
 open cmd
 ```
-ImageUI>npm install
+SimpleDateTrack>npm install
 ```
 ```
 cd ImageUI>
 ```
 then run
 ```
-ImageUI>react-native run-android
+SimpleDateTrack>react-native run-android
 ```
 ## Built With
 
