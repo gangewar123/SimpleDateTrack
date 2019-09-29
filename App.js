@@ -3,7 +3,7 @@ import {StyleSheet, Text, View, Image, Dimensions} from 'react-native';
 import Svg, {G, Path} from 'react-native-svg';
 
 import CircularSlider from 'react-native-circular-slider';
-import TimerText from './timerText.js';
+import TimerText from './component/timerText.js';
 
 const DATE_ICON = (
   <G>
@@ -109,8 +109,7 @@ export default class App extends Component {
               alignItems: 'center',
               justifyContent: 'space-between',
             }}>
-            <View
-              style={styles.cardLayout}>
+            <View style={styles.cardLayout}>
               <Image
                 style={{height: 70, width: 70, borderRadius: 90}}
                 source={{
@@ -125,13 +124,19 @@ export default class App extends Component {
                 margin: 30,
                 alignItems: 'center',
               }}>
-              <Text style={{color: 'white', fontSize: 20,fontWeight:'bold'}}>
+              <Text style={{color: 'white', fontSize: 20, fontWeight: 'bold'}}>
                 SEPTEMBER {padMinutes(waketime.m)}
               </Text>
               <Text style={{color: 'white', paddingTop: 3, fontSize: 10}}>
                 DAILY HOROSCOPE
               </Text>
-              <Text style={{color: 'white', paddingTop: 10, fontSize: 15,fontWeight:'bold'}}>
+              <Text
+                style={{
+                  color: 'white',
+                  paddingTop: 10,
+                  fontSize: 15,
+                  fontWeight: 'bold',
+                }}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -188,7 +193,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
   },
-  cardLayout:{
+  cardLayout: {
     borderRadius: 90,
     justifyContent: 'center',
     alignItems: 'flex-start',
@@ -198,5 +203,5 @@ const styles = StyleSheet.create({
     width: 70,
     height: 70,
     backgroundColor: 'red',
-  }
+  },
 });
