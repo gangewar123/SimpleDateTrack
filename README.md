@@ -14,7 +14,7 @@ open cmd
 SimpleDateTrack>npm install
 ```
 ```
-cd ImageUI>
+cd SimpleDateTrack>
 ```
 then run
 ```
