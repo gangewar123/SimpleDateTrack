@@ -20,6 +20,9 @@ then run
 ```
 SimpleDateTrack>react-native run-android
 ```
+## Shots
+<img src="https://github.com/gangewar123/SimpleDateTrack/blob/master/shots/SimpleDateTrack.gif" width="350" title="hover text">
+
 ## Built With
 
 * [React-native](https://facebook.github.io/react-native/) - The Hybrid-app framework used
